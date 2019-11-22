@@ -551,9 +551,12 @@ footer li.nav-item::after{
     .fa-bars:before {
         content: "\f0c9";
     }
+    h2{
+        font-size: 42px;
+    }
 
     section {
-        padding: 50px;
+        padding: 20px;
     }
     .purple {
         padding: 20px 10% 20px;
