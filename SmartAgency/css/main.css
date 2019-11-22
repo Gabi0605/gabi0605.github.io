@@ -118,7 +118,7 @@ main .hide {
     font-size: 18px;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 362px) {
   h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 40px;
