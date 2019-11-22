@@ -15,12 +15,12 @@ p {
   text-transform: none;
   line-height: 1.5rem;
 }
-header {
+main {
   padding-top: 80px;
   background-color: #f5f5f5;
   position: relative;
 }
-header .logo {
+main .logo {
   font-family: 'Open Sans', sans-serif;
   font-size: 39px;
   text-transform: capitalize;
@@ -30,21 +30,23 @@ header .logo {
   display: inline;
   padding: 0 20px;
 }
-header .menu {
+main .menu {
   cursor: pointer;
 }
-header .slogan {
+main .slogan {
   margin-top: 140px;
   margin-bottom: 110px;
 }
-header .slogan h2 {
+main .slogan h2 {
   margin-bottom: 40px;
 }
-header .form {
+main .form {
   background-color: #ffffff;
   padding: 25px 35px;
+  margin-bottom: 60px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-header .form h2 {
+main .form h2 {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   text-transform: capitalize;
@@ -52,34 +54,35 @@ header .form h2 {
   color: #6b6b6b;
   margin-bottom: 45px;
 }
-header .form .input {
+main .form .input {
   border: none;
   border-bottom: 1px solid #6b6b6b;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
-header .form .input-message {
-  border: none;
-  border-bottom: 1px solid #6b6b6b;
-  width: 100%;
-  margin-bottom: 25px;
+main .form .input:focus {
+  outline: none;
+}
+main .form .input-message {
   padding-bottom: 60px;
   resize: none;
 }
-header .form .form-button {
+main .form-button {
   text-transform: capitalize;
   background: #ff5c36;
   border-radius: 20px;
   color: #ffffff;
   padding: 10px 35px 10px 60px;
 }
-header .form .form-button .fas {
+main .form-button .fas {
   padding-left: 15px;
 }
-header .form .form-button:hover {
+main .form-button:hover {
   background: #fd3000;
 }
-header .thank {
+main .thank,
+main .sorry {
   background: #ff5c36;
   color: #ffffff;
   position: absolute;
@@ -88,15 +91,30 @@ header .thank {
   border-radius: 20px;
   padding: 15px 30px;
   font-size: 20px;
+  transition: all ease 1s;
 }
-header .hide {
+main .delete {
   display: none;
 }
-@keyframes hideBlock {
-  0% {
-    opacity: 1;
+main .hide {
+  opacity: 0;
+}
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 20px;
+    line-height: 2.5rem;
   }
-  100% {
-    opacity: 0;
+  main .form h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #6b6b6b;
+  }
+  main .form .input {
+    font-size: 20px;
+  }
+  main .form-button {
+    font-size: 20px;
   }
 }

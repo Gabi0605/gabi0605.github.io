@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <main>
         <div class="container">
             <div class="row">
                 <div class="col-6 text-left">
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-8 offset-2 text-center">
+                <div class="col-lg-8 offset-lg-2 col-12 text-center">
                     <div class="slogan">
                         <h2><span>Smart</span> Agency Landign Page<h2>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam perspiciatis similique, natus maiores placeat facilis fugiat. Dolorem voluptatibus praesentium odit ab ipsam, explicabo cum laborum ipsum deleniti quibusdam voluptates quisquam.</p>
@@ -34,16 +34,19 @@
                         <h2 class="text-center"><span>Send</span> a message</h2>
                         <input type="text" placeholder="Your Name" class="input">
                         <input type="email" placeholder="Your Email" class="input">
-                        <textarea placeholder="Your Message" class="input-message"></textarea>
+                        <textarea placeholder="Your Message" class="input input-message"></textarea>
                         <button type="button" class="btn form-button sendMessage">Send message<i class="fas fa-long-arrow-alt-right"></i></button>
                     </div>
                 </div>
-                <div class="alert thank hide" role="alert">
+                <div class="alert thank delete" role="alert">
                     Your message has been sent! Thank you!
+                </div>
+                <div class="alert sorry delete" role="alert">
+                    Your message hasn`t been sent! Sorry!
                 </div>
             </div>
         </div>
-    </header>
+    </main>
 
 
     <script src="js/script.js"></script>
