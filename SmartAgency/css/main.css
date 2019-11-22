@@ -100,21 +100,21 @@ main .hide {
   opacity: 0;
 }
 @media screen and (min-width: 768px) {
-  p {
-    font-size: 20px;
+p {
+    font-size: 30px;
     line-height: 2.5rem;
   }
   main .form h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 35px;
+    font-size: 45px;
     text-transform: capitalize;
     font-weight: 600;
     color: #6b6b6b;
   }
   main .form .input {
-    font-size: 20px;
+    font-size: 30px;
   }
   main .form-button {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
