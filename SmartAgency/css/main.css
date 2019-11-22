@@ -101,8 +101,9 @@ main .hide {
 }
 @media screen and (max-width: 768px) {
   p {
-    font-size: 50px;
-    line-height: 5rem;
+    font-size: 30px;
+    line-height: 2.5rem;
+    color: red;
   }
   main .form h2 {
     font-family: 'Open Sans', sans-serif;
