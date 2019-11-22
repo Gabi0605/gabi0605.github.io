@@ -101,7 +101,7 @@ main .hide {
 }
 @media screen and (max-width: 768px) {
   p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 2.5rem;
   }
   main .form h2 {
@@ -112,9 +112,29 @@ main .hide {
     color: #6b6b6b;
   }
   main .form .input {
-    font-size: 20px;
+    font-size: 18px;
   }
   main .form-button {
-    font-size: 20px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 350px) {
+  p {
+    font-size: 18px;
+    line-height: 2.5rem;
+  }
+  main .form h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #6b6b6b;
+  }
+  main .form .input {
+    font-size: 18px;
+  }
+  main .form-button {
+    font-size: 18px;
+    padding: 10px 15px 10px 20px;
   }
 }
