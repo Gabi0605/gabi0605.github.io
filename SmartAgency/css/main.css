@@ -101,20 +101,20 @@ main .hide {
 }
 @media screen and (max-width: 768px) {
   p {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 2.5rem;
   }
   main .form h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 45px;
+    font-size: 40px;
     text-transform: capitalize;
     font-weight: 600;
     color: #6b6b6b;
   }
   main .form .input {
-    font-size: 30px;
+    font-size: 20px;
   }
   main .form-button {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
