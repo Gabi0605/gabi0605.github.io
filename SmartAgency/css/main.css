@@ -119,6 +119,13 @@ main .hide {
   }
 }
 @media screen and (max-width: 350px) {
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #6b6b6b;
+  }
   p {
     font-size: 18px;
     line-height: 2.5rem;
