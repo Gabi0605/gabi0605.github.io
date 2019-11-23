@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #8b8b8b;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 52px;
+    font-weight: 300;
+    color: #fff;
+    padding-left: 3%;
+}
+
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #323232;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: none;
+    position: relative;
+    top: 8px;
+}
+
+/* ----------------------------header------------------------- */
+
+header {
+    background: url(../images/background.png) top no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+    min-height: 80vh;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #fff;
+}
+
+i.fas {
+    padding-right: 10px;
+    color: #fff
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #fff;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+nav.navbar {
+    width: 100%;
+}
+
+.search {
+    margin: 250px 0;
+    width: 60%;
+}
+
+.searching {
+    margin-top: 20px;
+}
+
+.form-control {
+    width: 60%;
+    border-radius: 0;
+}
+
+.btn-link, .btn-link:hover {
+    background: #fd4f32;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    bottom: 1.5px;
+    padding: 6.7px 50px;
+    border-radius: 0;
+}
+
+/* --------------------------/header------------------------- */
+
+
+/* ---------------------------section-destinations------------------------ */
+
+section {
+    padding-top: 60px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.gray {
+    background: #eeeeee;
+}
+
+.text-large {
+    font-size: 16px;
+}
+
+.card {
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.col-lg-3 {
+    max-width: 22%;
+    margin: 0 .75%;
+}
+
+.sum {
+    position: absolute;
+    right: 10px;
+    top: 140px;
+    color: #fff;
+}
+
+/* -----------------------/section-destinations------------------------ */
+
+/* --------------------------section-leave--------------------------- */
+
+.leave h1 {
+    color: #323232;
+    padding-bottom: 61px;
+}
+
+.col-md-4 {
+    max-width: 27%;
+    margin: 0 3%;
+    display: inline-block;
+}
+
+.subscribe {
+    padding-top: 68px;
+}
+
+.subscribe h2 {
+    margin-bottom: 25px;
+
+}
+
+.subscribe .searching {
+    width: 50%;
+}
+
+.subscribe .searching input {
+    background: #eeeeee;
+}
+
+.subscribe .searching button {
+    position: relative;
+    bottom: 3px;
+}
+
+/* --------------------------/section-leave--------------------------- */
+
+/* -----------------------------------footer------------------------- */
+
+
+.copyright {
+    padding-top: 1.5rem;
+}
+
+/* --------------------------------------/footer------------------------------- */
+
+
+
+
+/* ------------------------------------media-------------------------------------- */
+
+@media only screen and (max-width : 1200px) {
+    h3 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    h1 {
+        font-size: 35px;
+    }
+    
+
+    .search {
+       background: rgba(0,0,0,.35);
+       padding: 5px;
+    }
+
+    .col-sm-6 {
+        max-width: 46.5%;
+        margin: 10px .75%;
+    }
+
+    .col-md-4 {
+        /* max-width: 48.5%; */
+        margin: 0;
+    }
+
+    .subscribe .searching button {
+        bottom: 2px;
+    }
+
+    .btn-link, .btn-link:hover {
+        padding: 6.7px 42px;
+    }
+
+    .form-control {
+        width: 52%;
+    }
+
+    .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    .search {
+        position: absolute;
+        
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .subscribe .searching {
+        width: 100%;
+    }
+
+    .subscribe .searching button {
+        bottom: 3px;
+    }
+
+    .copyright {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 620px) {
+    .col-md-4 {
+        min-width: 95%;
+        padding-bottom: 10px;
+    }
+
+    .search {
+        width: 90%;
+    }
+    
+ }
+
+@media only screen and (max-width : 530px) {
+    .sum {
+        top: 120px;
+    }
+
+    
+}
+
+@media only screen and (max-width : 480px) {
+    .sum {
+        top: 235px;
+    }
+
+    .col-sm-6 {
+        min-width: 90%;
+    }
+
+    .destinations p {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media only screen and (max-width : 430px) {
+    .sum {
+        top: 205px;
+    }
+
+    .btn-link, .btn-link:hover {
+        padding: 6.7px 14px;
+    }
+}
