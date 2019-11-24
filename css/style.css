@@ -232,7 +232,6 @@ a:hover {
 }
 .my-skills .skills .skill {
   padding-top: 20px;
-  cursor: pointer;
 }
 .my-skills .skills .skill:hover {
   background: rgba(255, 255, 255, 0.9);
@@ -275,6 +274,10 @@ a:hover {
   .main .about-me {
     flex-basis: 0;
   }
+  .my-works .container {
+    background: none;
+    box-shadow: none;
+  }
   .my-skills .skills p.bold {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -285,5 +288,9 @@ a:hover {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #212121;
+  }
+  .my-skills .container {
+    background: none;
+    box-shadow: none;
   }
 }
