@@ -275,4 +275,15 @@ a:hover {
   .main .about-me {
     flex-basis: 0;
   }
+  .my-skills .skills p.bold {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #212121;
+    font-weight: 600;
+  }
+  .my-skills .skills p.reg {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #212121;
+  }
 }
