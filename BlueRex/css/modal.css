@@ -1,0 +1,131 @@
+.modal-wrap {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.modal {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 250px;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    text-align: center;
+    position: relative;
+    z-index: 99999999999;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.modal-h3 {
+    margin: 20px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    font-size: 26px;
+}
+
+.just {
+    text-align: justify;
+    padding: 20px;
+}
+
+img.modal-close {
+    width: 40px;
+    padding-right: 0;
+    padding-top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.pass {
+    margin-bottom: 30px;
+}
+
+.modal button {
+    cursor: pointer;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    width: 100px;
+    height: 30px;
+}
+
+.help {
+    margin: 15px;
+    cursor: pointer;
+}
+
+.back {
+    margin: 30px;
+    cursor: pointer;
+}
+
+.back-p {
+    padding: 20px;
+}
+
+.left-50, .right-50 {
+    /* display: inline-block; для слайдера*/
+    width: 50%;
+    float: left;
+}
+
+.smile {
+    width: 80px;
+}
+
+.second {
+    padding: 60px 20px;
+    text-align: justify;
+}
+
+.hide {
+    display: none;
+}
+
+
+.flash {
+    width: 300px;
+    padding: 30px;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .height-more {
+        height: 350px;
+    }
+}

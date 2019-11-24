@@ -6,13 +6,14 @@
 
 
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Poppins:300,400,600,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4e4f86e816.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/modal.css">
     
     <script src="js/jquery-3.4.1.min.js"></script>
     <title>BlueRex</title>
@@ -32,14 +33,14 @@
               </button>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item "><a class="nav-link" href="#">webdesign</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Faq</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              <ul class="navbar-nav ml-auto" id="nav">
+                <li class="nav-item "><a class="nav-link" href="#webdesign">webdesign</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+                <li class="nav-item"><a class="nav-link" href="#features">features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">product</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reviews">reviews</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faq">faq</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacts">contact</a></li>
               </ul>
               
             </div>
@@ -52,15 +53,15 @@
           <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p>
           
           <div class="main-header-button">
-            <button type = "button" class="btn btn-pink rounded-pill">Our story</button>
-            <button type = "button" class="btn btn-violet rounded-pill">Read more</button>
+            <button type = "button" class="btn btn-pink rounded-pill modal-show" data-modal = "#sign-in">Our story</button>
+            <button type = "button" class="btn btn-violet rounded-pill modal-show" data-modal = "#sign-in">Read more</button>
           </div>
               
         </div>
 
     </header>
 
-    <section class="section-watch">
+    <section class="section-watch" id="webdesign">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-5">
@@ -80,13 +81,13 @@
             </ul>
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="webdesign" role="tabpanel" aria-labelledby="webdesign-tab"><p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.Lorem ipsum dolor sit am et, consec tetur adipi scing elit.</p>
-              <p><a href="#" class="btn btn-pink btn-shadow">Read more</a></p>
+                <p><button class="btn btn-pink btn-shadow modal-show" data-modal = "#sign-in">Read more</button></p>
             </div>
               <div class="tab-pane fade" id="mobileapp" role="tabpanel" aria-labelledby="mobileapp-tab"><p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-                <p><a href="#" class="btn btn-pink btn-shadow">Read more</a></p>
+                <p><button class="btn btn-pink btn-shadow modal-show" data-modal = "#sign-in">Read more</button></p>
               </div>
               <div class="tab-pane fade" id="branding" role="tabpanel" aria-labelledby="branding-tab"><p>Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-                <p><a href="#" class="btn btn-pink btn-shadow">Read more</a></p>
+                <p><button class="btn btn-pink btn-shadow modal-show" data-modal = "#sign-in">Read more</button></p>
               </div>
             </div>
           </div>
@@ -101,7 +102,7 @@
     </section>
     <!-- /.section-watch -->
 
-    <section class="section-progress text-center">
+    <section class="section-progress text-center" id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 purple">
@@ -126,14 +127,14 @@
     </section>
     <!-- /.section-progress -->
 
-    <section class="section-lets-grow">
+    <section class="section-lets-grow" id="features">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center ">
             <h3>Let's Grow Together</h3>
             <h2>We	turn creative ideas into your business.</h2>
             <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. </p>
-            <button class="btn btn-pink btn-shadow clearfix">Read more</button>
+            <button class="btn btn-pink btn-shadow clearfix modal-show" data-modal = "#sign-in">Read more</button>
           </div>
         </div>
       </div>
@@ -153,13 +154,13 @@
                   <div><i class = "far fa-comments gradient-icon"></i></div>
                   <h5>Graphic Design</h5>
                   <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p>
-                  <button class="btn btn-pink btn-shadow clearfix">Read more</button>
+                  <button class="btn btn-pink btn-shadow clearfix modal-show" data-modal = "#sign-in">Read more</button>
                 </div>
                 <div class="col-md-6">
                     <div><i class = "fas fa-bullhorn gradient-icon"></i></div>
                     <h5>Graphic Design</h5>
                     <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p>
-                    <button class="btn btn-pink btn-shadow clearfix">Read more</button>
+                    <button class="btn btn-pink btn-shadow clearfix modal-show" data-modal = "#sign-in">Read more</button>
                 </div>
               </div>
           </div>
@@ -174,7 +175,7 @@
     </section>
     <!-- /.section-best -->
 
-    <section class="section-portfolio">
+    <section class="section-portfolio" id="products">
       <div class="container">
         <div class="row">
           <div class="col-md-8 offset-md-2 text-center">
@@ -382,7 +383,7 @@
     </section>
     <!-- /.section-logo -->
 
-    <section class="section-reviews">
+    <section class="section-reviews" id="reviews">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -464,7 +465,7 @@
     </section>
     <!-- /.section-reviews -->
 
-    <section class="section-help">
+    <section class="section-help" id="faq">
       <div class="container">
         <div class="row">
           <h2>Need Help?</h2>
@@ -485,7 +486,7 @@
                 </div>
                 
                 <div class="col-auto min">
-                  <button type="submit" class="btn btn-violet btn-shadow mb-2">Submit</button>
+                  <button type="submit" class="btn btn-violet btn-shadow mb-2 modal-show" data-modal = "#sign-in"">Submit</button>
                 </div>
               </div>
             </form>
@@ -494,7 +495,7 @@
     </section>
     <!-- /.section-help -->
 
-    <section class="section-facebook">
+    <section class="section-facebook" id="contacts">
       <div class="container">
         <div class="row">
           <div class="col-md-10 offset-md-1">
@@ -616,6 +617,19 @@
         </div>
     </footer>
 
+    <div class="modal-wrap hide" id = "sign-in">
+      <div class="modal height-more">
+          <div class="form-slider">
+                  <img src="images/close.png" alt="" class = "modal-close">
+                  
+                  <h3 class="modal-h3">Lorem ipsum</h3>
+                  <p class = "just">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum lectus vulputate sed. Phasellus vestibulum sit amet dolor eget eleifend.</p>
+                  
+                  <button class = "modal-close btn btn-pink btn-shadow">Back</button>
+  
+          </div>
+      </div>
+  </div>
    
 
 
@@ -623,7 +637,8 @@
 
     <script src="js/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
     <script src="js/script.js"></script>
     <script src="js/baguetteBox.min.js" async></script>
     <script src="js/main.js"></script>
