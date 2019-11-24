@@ -25,7 +25,7 @@ function stop() {
     event.stopPropagation();
  };
 
- document.querySelectorAll('.modal').forEach(function (element) {
+ document.querySelectorAll('.modal-s').forEach(function (element) {
     element.onclick = stop;
  });
 
