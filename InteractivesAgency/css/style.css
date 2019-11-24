@@ -1,0 +1,742 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Proxima Nova';
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+.container {
+    max-width: 1500px;
+}
+
+.width-100p  {
+    width: 100%;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+button {
+    font-size: 18px;
+    margin-top: 60px;
+    height: 50px;
+    width: 200px;
+    background: linear-gradient(to right, #4900c7, #bc0085);
+    color: #fff;
+    border: 0px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#toTop {
+    border:0px solid #ccc;
+    background: rgba(255, 255, 255, 0.5);
+    text-align:center;
+    border-radius: 100%;
+    padding: 8px 6px 0 6px;
+    vertical-align: middle;
+    position:fixed;
+    bottom:10px;
+    left: 90%;
+    cursor:pointer;
+    display:none;
+    color:#333;
+    font-family:verdana;
+    font-size:11px;
+    }
+
+
+/* ---------------сетка------------------ */
+
+.lg-12 {
+    width: 90%;
+    margin: 0 5%;     
+}
+
+.lg-6 {
+    width: 40%;
+    margin: 0 5%;
+    float: left;
+}
+
+.lg-3 {
+    width: 15%;
+    margin: 0 5%;
+    float: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.left {
+    text-align: left;
+}
+
+/* ---------------------/сетка---------------- */
+
+
+
+
+.background {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 1080px;
+}
+
+/* ------------------header----------------------- */
+
+.header-block {
+    width: 50%;
+    float: left;
+}
+
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.logo {
+    font-size: 36px;
+    padding: 50px 180px 50px 100px;
+}
+
+header nav {
+    margin-left: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul li {
+    float: left;
+    margin: 68px 20px;
+}
+
+ul li:hover {
+    border: 1px solid #3e4042;
+    padding: 10px 19px;
+    margin: 57px 10px;
+    border-radius: 40px;
+}
+
+/* --------------------------/header----------------- */
+
+/* ------------------------price-------------------------- */
+
+.price {
+    padding-top: 145px;
+}
+
+.price h1 {
+    font-size: 48px;
+}
+
+.scroll {
+    padding-top: 170px;
+}
+
+.scroll p {
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 100px;
+    color: #fff;
+}
+
+/* ------------------------/price-------------------------- */
+
+/* ------------------------best-------------------------- */
+
+.best {
+    max-height: 520px;
+    /* position: absolute; */
+    position: relative;
+    
+}
+
+.gradient{
+    background: linear-gradient(to bottom, #000, rgba(0,0,0,0));
+    width: 100%;
+    min-height: 520px;
+    position: absolute;
+
+}
+
+.best::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.left-best {
+    width: 50%;
+    float: left;
+    background-image: url(../images/best-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+}
+
+.right-best {
+    width: 50%;
+    float: left;
+    background-image: url(../images/best-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.best h2 {
+    padding-top: 145px;
+    color: #fff;
+    padding-left: 32%;
+    position: relative;
+}
+
+.best h2 span.bold {
+    color: #fff;
+}
+
+.best p {
+    color: #fff;
+    width: 60%;
+    padding-top: 20px;
+    margin-left: 32%;
+    position: relative;
+}
+
+.best button {
+    margin-left: 32%;
+    margin-bottom: 112px;
+    position: relative;
+}
+
+/* -------------------------/best------------------------- */
+
+/* --------------------------offer-------------------------- */
+
+.offer {
+    /* max-height: 850px; */
+    text-align: center;
+    /* width: 1500px; */
+    margin: 0 auto;
+    /* padding-bottom: 100px; */
+}
+
+.offer h2 {
+    font-weight: 700;
+    color: #000;
+    padding-top: 95px;
+}
+
+/* .block-50 {
+    width: 40%;
+    float: left;
+    margin: 5.8% 2% 4% 7%;
+    position: relative;
+} */
+
+/* .offer .lg-6::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+.offer-card {
+    position: relative;
+    padding-bottom: 70px;
+    margin-top: 90px;
+}
+
+.offer-card img {
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+
+.offer-card h3 {
+    font-size: 30px;
+    padding-left: 165px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+
+.offer-card p {
+    font-size: 18px;
+    color: #949494;
+    padding-left: 165px;
+    text-align: left;
+}
+
+.offer button {
+    margin-bottom: 100px;
+}
+
+/* ----------------------------/offer----------------------- */
+
+/* -----------------------------slider------------------- */
+
+.regular img {
+    width: 99.9999%;
+    cursor: pointer;
+}
+
+.active-slider {
+    position: relative;
+}
+
+.active {
+    background: black;
+    width: 100%;
+    opacity: 0.5;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.slick-active{
+    outline: none;
+}
+
+/* ------------------/slider------------------- */
+
+/* --------------------about-us-------------------- */
+
+.about-us {
+    width: 100%;
+    min-height: 800px;
+    background-image: url(../images/background-about-us.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-us h2 {
+    font-size: 48px;
+    color: #fff;
+    padding-top: 115px;
+    padding-bottom: 35px;
+}
+
+.about-us p.about {
+    font-size: 18px;
+    color: #949494;
+    padding-bottom: 125px;
+}
+
+.photos {
+    padding-bottom: 10px;
+}
+
+.photos::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.photos-card img {
+    padding: 0 10px;
+    margin: 0 ;
+}
+
+
+.photos-card h3 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 25px 0;
+}
+
+.photos-card p {
+    color: #949494;
+    font-size: 18px;
+}
+
+.about-us button {
+    margin-bottom: 120px;
+}
+
+/* ----------------------/about-us-------------------------- */
+
+
+.map {
+    filter: grayscale(30%);
+}
+
+/* -------------------footer------------------ */
+
+footer {
+    background: #fff;
+    padding: 60px 0;
+}
+
+footer p {
+    font-size: 18px;
+    color: #a7acbc;
+    padding-bottom: 18px;
+}
+
+footer p span.bold {
+    color: #a7acbc;
+}
+
+
+
+
+/* ----------------------/footer--------------- */
+
+
+
+/* ----------------------------media-768-md-------------------- */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 20px;
+    }
+
+    #toTop {
+        width: 0;
+        height: 0;
+        top: 0;
+    }
+
+    
+
+    .lg-12,
+    .lg-6,
+    .lg-3 {
+        width: auto;
+        height: auto;
+        margin: 0;
+        font: none;
+    }
+    
+    .center {
+        text-align: center;
+    }
+
+    .md-12 {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .md-6 {
+        width: 40%;
+        margin: 0 5%;
+        float: left;
+    }
+
+    .width-100p {
+        /* max-width: 768px; */
+    }
+
+    .logo {
+        padding: 20px 0;
+    }
+
+    ul li {
+        margin: 0 15px;
+    }
+
+    ul li:hover {
+        border: none;
+        margin: 0 15px;
+        padding: 0;
+    }
+
+    header nav {
+        padding-left: 10%;
+        padding-bottom: 40px;
+    }
+
+    .price {
+        padding-top: 10px;
+        background: rgba(0,0,0,0.5);
+
+    }
+
+    .price h1 {
+        margin-top: 20px;
+        color: #fff;
+        /* background: rgba(0,0,0,0.5); */
+    }
+
+    .price p {
+        color: #fff;
+        padding-top: 20px;
+        font-style: 20px;
+        /* background: rgba(0,0,0,0.5); */
+        padding-bottom: 20px;
+    }
+
+    button {
+        margin: 10px 0 15px;
+    }
+
+    .scroll {
+        height: 0;
+        padding: 0;
+        margin: 0;
+        width: 0;
+    }
+
+    .best h2 {
+    padding-top: 19px;
+    margin-left: 5%;
+    padding-left: 0;
+    text-align: center;
+    }
+
+    .right-best h2 {
+        margin-left: 0;
+    }
+
+    .best p {
+        margin-left: 15%;
+        padding-bottom: 20px;
+    }
+
+    .best button {
+        margin-left: 15%;
+        margin-bottom: 15px;
+    }
+
+    .photos-card p {
+        padding-bottom: 20px;
+        font-size: 19px;
+    }
+
+    .about-us button {
+        margin-bottom: 15px;
+    }
+
+    .offer-card {
+        padding-left: 15px;
+    }
+
+    .offer-card p {
+        width: 85%;
+        margin: 0 5%;
+    }
+
+    .offer-card img {
+        left: 15px;
+    }
+
+    .offer button {
+        margin: 0 0 15px;
+    }
+
+    .offer h2 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .about-us h2 {
+        padding-top: 40px;
+    }
+
+    .about-us p.about {
+        padding-bottom: 40px;
+    }
+}
+
+/* ----------------------------media-600-ms------------------- */
+
+@media screen and (max-width: 600px) {
+
+    .ms-12 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .ms-6 {
+        width: 40%;
+        margin: 0 5%;
+        float: left;
+    }
+
+    .background {
+        background-size: cover;
+    }
+
+    header nav {
+        padding-bottom: 0;
+    }
+
+    .price {
+        padding-top: 0;
+    }
+
+    .price h1 {
+        padding: 0 15px;
+    }
+
+    .price p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .best {
+        max-height: 1000px;
+    }
+
+    .best button {  
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    .photos-card h3 {
+        padding: 0;
+    }
+
+
+    .photos-card p {
+        padding-bottom: 10px;
+        font-size: 19px;
+    }
+
+    .about-us {
+        background-size: cover;
+    }
+
+    .about-us button {
+        margin-bottom: 15px;
+        margin-top: -5px;
+    }
+
+    .big {
+        padding-bottom: 10px;
+    }
+}
+
+/* -------------------media-480-m------------------- */
+
+@media screen and (max-width: 480px) {
+
+    .m-12 {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .m-6 {
+        width: 40%;
+        margin: 0 5%;
+        float: left;
+    }
+
+    .price p {
+        padding: 10px 40px;
+    }
+
+    .price h1 {
+        padding: 10px 20px;
+    }
+
+    
+    .offer-card p {
+        padding-left: 15px;
+    }
+}
+
+/* --------------------------media-390-mm--------------- */
+
+@media screen and (max-width: 390px) {
+
+    .mm-12 {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .mm-6 {
+        width: 40%;
+        margin: 0 5%;
+        float: left;
+    }
+
+    .offer-card h3 {
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+   
+    .offer-card {
+        padding-bottom: 70px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .offer-card img {
+        position: static;
+    }
+    
+    
+    .offer-card p {
+        text-align: center;
+    }
+    
+    header nav {
+        padding: 0;
+    }
+    ul li:hover {
+        margin: 0 5%;
+        padding: 0;
+    }
+}
+
+/* -----------------------media-330-mmm------------------ */
+
+@media screen and (max-width: 330px) {
+    
+    .logo a {
+        font-size: 30px;
+    }
+
+    .offer-card {
+        padding-bottom: 20px;
+    }
+
+    ul li:hover {
+        margin: 0 5%;
+        padding: 0;
+    }
+
+
+}
