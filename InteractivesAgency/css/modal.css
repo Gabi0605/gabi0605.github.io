@@ -97,13 +97,6 @@ img.modal-close {
     padding: 20px;
 }
 
-.form-slider {
-    width: 500px;
-    height: 300px;
-    margin-left: 0;
-    transition: all ease 1s;
-}
-
 .left-50, .right-50 {
     /* display: inline-block; для слайдера*/
     width: 50%;
@@ -123,13 +116,6 @@ img.modal-close {
     display: none;
 }
 
-.super {
-    width: 500px;  
-    height: 400px;
-    background: rgba(0,0,0, 0.8);
-    color: #fff;
-    overflow: auto;
-}
 
 .flash {
     width: 300px;

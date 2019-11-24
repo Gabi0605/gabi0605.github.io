@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>InteractivesAgency</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="slick/slick.css"/>
@@ -41,14 +42,14 @@ $('body,html').animate({scrollTop:0},800);
 </head>
 <body>
 
-<div class="width-100p">
+<div class="">
         <div class="background">
             <div class="container">
-                <header id = "home">
-                    <div class="logo lg-6 light md-12 center">
+                <div class="row">
+                    <div class="logo light col-lg-5 offset-1 col-md-11">
                         <a href = "index.html"><span class = "bold">Interactives</span>Agency</a>
                     </div>
-                    <nav class="lg-6 left md-12 center m-12">
+                    <nav class="left col-lg-5 col-md-11 offset-1 text-center">
                         <ul>
                             <li class = "mm-6"><a href = "#about-us">About us</a></li>
                             <li class = "mm-6"><a href = "#offer">Offer</a></li>
@@ -56,24 +57,26 @@ $('body,html').animate({scrollTop:0},800);
                             <li class = "mm-6"><a href = "#contact">Contact</a></li>
                         </ul>
                     </nav>
-                </header>
-
-                <div class="price lg-12 text-center">
-                    <h1 class = "bold">Lorem ipsum dolor sit amet</h1>
-                   
-                    <button class = "modal-show" data-modal = "#sign-in">Ask for price</button>
                 </div>
-                
-                <div class="scroll lg-12 text-center light">
-                    <img src="images/scroll.png" alt="">
-                    <p>scroll down</p>
+                <div class="row">
+                    <div class="price col-lg-12 text-center">
+                        <h1 class = "bold">Lorem ipsum dolor sit amet</h1>
                     
+                        <button class = "modal-show" data-modal = "#sign-in">Ask for price</button>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="scroll col-lg-12 light">
+                        <img src="images/scroll.png" alt="">
+                        <p>scroll down</p>
+                        
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="best" id = "offer">
-            <div class="width-100p">
+            <div class="">
                 <div class="left-best ms-12">    
                     <div class="gradient"></div> 
                     <h2 class = "light">Best<span class = "bold">Design</span></h2>
@@ -89,39 +92,47 @@ $('body,html').animate({scrollTop:0},800);
             </div>   
         </div>
 
-        <div class="container">
-            <div class="offer">
-                <h2>What we do?</h2>
-
-                    <div class="offer-card lg-6">
-                        <img src="images/offer-1.png" alt="">
-                        <h3 class = "bold">Web design</h3>
-                        <p class = "light">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+        <div class="offer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>What we do?</h2>
                     </div>
-
-                    <div class="offer-card lg-6">
-                            <img src="images/offer-2.png" alt="">
-                            <h3 class = "bold">Web Applications</h3>
+                    <div class="col-md-6">
+                        <div class="offer-card lg-6">
+                            <img src="images/offer-1.png" alt="">
+                            <h3 class = "bold">Web design</h3>
                             <p class = "light">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                        </div>
+                    </div>   
+                    <div class="col-md-6">
+                        <div class="offer-card lg-6">
+                                <img src="images/offer-2.png" alt="">
+                                <h3 class = "bold">Web Applications</h3>
+                                <p class = "light">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                        </div>
                     </div>
-
-                    <div class="offer-card lg-6">
-                            <img src="images/offer-3.png" alt="">
-                            <h3 class = "bold">Digital paiting</h3>
-                            <p class = "light">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                    <div class="col-md-6">
+                        <div class="offer-card lg-6">
+                                <img src="images/offer-3.png" alt="">
+                                <h3 class = "bold">Digital paiting</h3>
+                                <p class = "light">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                        </div>
                     </div>
-
-                    <div class="offer-card lg-6">
-                            <img src="images/offer-4.png" alt="">
-                            <h3 class = "bold">Desktop Applications</h3>
-                            <p class = "light">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                    <div class="col-md-6">
+                        <div class="offer-card lg-6">
+                                <img src="images/offer-4.png" alt="">
+                                <h3 class = "bold">Desktop Applications</h3>
+                                <p class = "light">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                        </div>
                     </div>
-                
-                <button class = "modal-show" data-modal = "#sign-in">Ask to price</button>
+                    <div class="col-12">
+                        <button class = "modal-show" data-modal = "#sign-in">Ask to price</button>                           
+                    </div>
+                </div>
             </div>
         </div>
     
-        
         <div class="mySlider" id = "portfolio">
             <div><img src="images/slider-1.png" alt=""></div>
             <div><img src="images/slider-2.png" alt=""></div>
@@ -129,39 +140,37 @@ $('body,html').animate({scrollTop:0},800);
             <div><img src="images/slider-1.png" alt=""></div>
             <div><img src="images/slider-2.png" alt=""></div>
             <div><img src="images/slider-3.png" alt=""></div>
-            <!-- <div><img src="images/slider-4.png" alt=""></div>
-            <div><img src="images/slider-5.png" alt=""></div>
-            <div><img src="images/slider-6.png" alt=""></div> -->
-                
         </div>
     
 </div>
 
-<div class="width-100p">
+<div class="">
     <div class="about-us text-center" id = "about-us">
         <div class="container"> 
             <h2>About us!</h2>
             <p class = "about light">Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
             <div class="photos text-center">
-                <div class="photos-card lg-3 text-center md-6 m-12">
-                    <img src="images/about_us_1.png" alt="">
-                    <h3>John Doe</h3>
-                    <p class = "light">Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
-                </div>
-                <div class="photos-card lg-3 text-center md-6 big m-12">
-                        <img src="images/about_us_2.png" alt="">
-                        <h3>John Doe</h3>
-                        <p class = "light">Aliquam sagittis neque in lectus semper, arcu <br>scelerisque. </p>
-                </div>
-                <div class="photos-card lg-3 text-center md-6 m-12">
-                        <img src="images/about_us_3.png" alt="">
+                <div class="row">
+                    <div class="photos-card col-md-3 col-sm-6 col-12 text-center">
+                        <img src="images/about_us_1.png" alt="">
                         <h3>John Doe</h3>
                         <p class = "light">Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
-                </div>
-                <div class="photos-card lg-3 text-center md-6 m-12">
-                        <img src="images/about_us_4.png" alt="">
-                        <h3>John Doe</h3>
-                        <p class = "light">Neque in lectus semper, nec elementum arcu scelerisque. </p>
+                    </div>
+                    <div class="photos-card col-md-3 col-sm-6 col-12 text-center">
+                            <img src="images/about_us_2.png" alt="">
+                            <h3>John Doe</h3>
+                            <p class = "light">Aliquam sagittis neque in lectus semper, arcu <br>scelerisque. </p>
+                    </div>
+                    <div class="photos-card col-md-3 col-sm-6 col-12 text-center">
+                            <img src="images/about_us_3.png" alt="">
+                            <h3>John Doe</h3>
+                            <p class = "light">Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                    </div>
+                    <div class="photos-card col-md-3 col-sm-6 col-12 text-center">
+                            <img src="images/about_us_4.png" alt="">
+                            <h3>John Doe</h3>
+                            <p class = "light">Neque in lectus semper, nec elementum arcu scelerisque. </p>
+                    </div>
                 </div>
             </div>
             <button class = "modal-show" data-modal = "#sign-in">Watch more</button>
@@ -170,7 +179,7 @@ $('body,html').animate({scrollTop:0},800);
 </div>
 
 <div class="map" id = "contact">
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acc39ac1b1fd70cc4ef20048e970ba5c3ab6557a5aa69ec6e85b9ea496a8b1425&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acc39ac1b1fd70cc4ef20048e970ba5c3ab6557a5aa69ec6e85b9ea496a8b1425&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
 </div>
 
 <div class="container">
@@ -213,9 +222,10 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
+    arrows: false,
     responsive: [
     {
-      breakpoint: 991,
+      breakpoint: 767,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
