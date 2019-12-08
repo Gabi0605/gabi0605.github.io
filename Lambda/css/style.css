@@ -1,0 +1,425 @@
+.bold {
+  font-weight: 600;
+}
+h2 {
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+h3 {
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 21px;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+a:focus {
+  outline: none;
+}
+.decoration {
+  padding: 15px 0 30px;
+}
+.decoration img {
+  width: 60%;
+}
+body {
+  position: relative;
+}
+section {
+  padding: 100px 0;
+}
+#toTop {
+  border: 0px solid #ccc;
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  border-radius: 40%;
+  padding: 8px 6px 0;
+  position: fixed;
+  vertical-align: middle;
+  bottom: 10px;
+  left: 90%;
+  cursor: pointer;
+  display: none;
+  color: #333;
+}
+.header {
+  color: #fff;
+}
+.header header nav {
+  padding-top: 20px;
+}
+.header header nav ul {
+  list-style-type: none;
+}
+.header header nav ul li {
+  display: inline-block;
+}
+.header header nav ul li a {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  padding: 0 10px;
+  position: relative;
+}
+.header header nav ul li a:hover {
+  text-decoration: none;
+}
+.header header nav ul li a:hover::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -38px;
+  width: 100%;
+  height: 5px;
+  background: #fff;
+}
+.header header nav ul li a i {
+  font-size: 15px;
+}
+.header .header-content {
+  margin-top: 120px;
+  text-align: center;
+}
+.header .header-content h1 {
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 90px;
+}
+.header .header-content .decoration {
+  margin: 0 auto;
+  max-width: 50%;
+}
+.header .header-content .button-header {
+  text-transform: uppercase;
+  color: #fff;
+  width: 230px;
+  height: 60px;
+  margin-bottom: 140px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+.header .header-content button:focus {
+  outline: none;
+}
+.header .header-content .left {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #000;
+  margin-right: 37px;
+}
+.header .header-content .left:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.header .header-content .right {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #fff;
+}
+.header .header-content .right:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+.right-food {
+  background: url(../img/background-right-food.png) no-repeat;
+  background-size: cover;
+}
+.right-food h2 {
+  color: #c9a131;
+}
+.right-food p {
+  color: #4c4c4c;
+}
+.right-food .chief {
+  margin-top: 50px;
+  margin-right: 30px;
+  text-align: right;
+}
+.right-food .food-one img {
+  width: 100%;
+}
+.fine-ingredients {
+  background: url(../img/background-fine-ingredients.png) no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+.fine-ingredients .dark {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 80px 90px;
+  margin: 100px 0;
+}
+.fine-ingredients .dark h2 {
+  color: #fff;
+}
+.fine-ingredients .dark p {
+  color: #fff;
+  padding-bottom: 70px;
+}
+.fine-ingredients .dark .images img {
+  width: 100%;
+}
+.menu {
+  background: url(../img/background-menu.png) no-repeat;
+  background-size: cover;
+}
+.menu h2,
+.menu h3 {
+  color: #c9a131;
+}
+.menu .item {
+  padding-bottom: 50px;
+}
+.menu .item:last-child {
+  padding-bottom: 0;
+}
+.menu .special {
+  border: 1px solid #decf9c;
+}
+.menu .menu-items-header {
+  position: relative;
+}
+.menu .menu-items-header::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: 1px;
+  background: #decf9c;
+}
+.menu p {
+  color: #4c4c4c;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  text-align: left;
+  padding-top: 15px;
+}
+.menu .menu-items {
+  margin-bottom: 20px;
+  padding: 0 10px;
+  position: relative;
+}
+.menu .special {
+  margin-top: 42px;
+}
+.menu .special::after {
+  content: "Special";
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  top: -23px;
+  right: -1px;
+  color: #fff;
+  position: absolute;
+  background: url(../img/special.png);
+  width: 70px;
+  height: 22px;
+}
+.reviews {
+  background: url(../img/background-reviews.png) no-repeat;
+  background-size: cover;
+}
+.reviews .guest-reviews {
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 80px;
+}
+.reviews .guest-reviews .decoration img {
+  width: 40%;
+}
+.reviews .guest-reviews .quote {
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  color: #dde0df;
+  line-height: 2;
+  position: relative;
+}
+.reviews .guest-reviews .quote::before {
+  content: "“";
+  position: absolute;
+  color: #dde0df;
+  font-size: 96px;
+  top: -65px;
+  left: -30px;
+}
+.reviews .guest-reviews .min {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  padding-top: 20px;
+}
+.right-food {
+  background: url(../img/background-right-food.png) no-repeat;
+  background-size: cover;
+}
+.right-food h2 {
+  color: #c9a131;
+}
+.right-food label {
+  color: #c9a131;
+  font-weight: 600;
+}
+.right-food .inputs {
+  margin-top: 10px;
+}
+.right-food input,
+.right-food select {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 5px 10px;
+  width: 95%;
+  margin-bottom: 15px;
+}
+.right-food input:focus,
+.right-food select:focus {
+  outline: none;
+  border: 1px solid #c9a131;
+}
+.right-food button {
+  width: 200px;
+  height: 35px;
+  background: #c9a131;
+  color: #fff;
+  border: none;
+  margin: 0 auto;
+}
+.footer {
+  background: #191919;
+  padding: 50px 0;
+}
+.footer h2 {
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 24px;
+  color: #fff;
+}
+.footer p {
+  color: #fff;
+}
+.footer .cards {
+  margin-top: 85px;
+  color: #fff;
+  font-size: 28px;
+}
+.footer a {
+  color: #fff;
+}
+@media screen and (max-width: 992px) {
+  section {
+    padding: 80px 0;
+  }
+  .header header nav ul li {
+    padding-top: 15px;
+  }
+  .header header nav ul li a:hover::before {
+    width: 0;
+    height: 0;
+  }
+  .header .header-content {
+    margin-top: 80px;
+  }
+  .header .header-content .button-header {
+    margin-bottom: 80px;
+  }
+  .right-food .chief {
+    margin-top: 30px;
+    margin-left: 80px;
+    text-align: center;
+  }
+  .right-food .food-one {
+    display: none;
+  }
+  .fine-ingredients .dark {
+    padding: 70px 90px;
+    margin: 80px 0;
+  }
+  .fine-ingredients .dark p {
+    color: #fff;
+    padding-bottom: 50px;
+  }
+  .menu .menu-items {
+    margin-bottom: 30px;
+  }
+  .menu .item {
+    padding-bottom: 0;
+  }
+  .reviews .guest-reviews {
+    padding: 70px;
+  }
+  .reviews .guest-reviews .quote {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+  }
+  .reviews .guest-reviews .quote::before {
+    font-size: 90px;
+  }
+  .second img {
+    display: none;
+  }
+  .second .form {
+    margin-top: 30px;
+  }
+  .second .form .inputs:first-child {
+    padding-top: 20px;
+  }
+  .second .form::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #c9a131;
+  }
+}
+@media screen and (max-width: 768px) {
+  section {
+    padding: 50px 0;
+  }
+  .header nav ul {
+    padding-left: 0;
+  }
+  .header .header-content {
+    margin-top: 40px;
+  }
+  .header .header-content h1 {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 60px;
+  }
+  .fine-ingredients .dark p {
+    padding-bottom: 0;
+  }
+  .fine-ingredients .dark img {
+    display: none;
+  }
+  .footer .cards {
+    margin-top: 25px;
+  }
+  .footer .footer-items:last-child {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header .header-content {
+    margin-top: 30px;
+  }
+  .header .header-content h1 {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 50px;
+  }
+  .header .header-content .button-header {
+    margin-bottom: 50px;
+    width: 180px;
+    height: 50px;
+  }
+  .fine-ingredients .dark {
+    padding: 50px;
+    margin: 60px 20px;
+  }
+  .reviews .guest-reviews {
+    padding: 50px;
+  }
+  .reviews .guest-reviews .quote {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+  }
+  .reviews .guest-reviews .quote::before {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .header .header-content .button-header {
+    display: block;
+    margin: 20px auto;
+  }
+}
