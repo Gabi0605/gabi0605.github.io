@@ -44,6 +44,8 @@ section {
   color: #333;
 }
 .header {
+  background: url(../img/background-header.png) no-repeat;
+  background-size: cover;
   color: #fff;
 }
 .header header nav {
