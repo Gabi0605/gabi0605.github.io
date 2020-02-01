@@ -58,7 +58,7 @@
                     <!-- /.icons -->
                 </div>
                 <!-- /.hero-description -->
-                <form action="index.html" method="post" class="form">
+                <form action="index.php" method="post" class="form">
                     <h3>Запишитесь сегодня на
                         <span>бесплатный замер</span>
                     </h3>
