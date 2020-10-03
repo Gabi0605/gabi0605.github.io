@@ -37,6 +37,7 @@ span.btn {
   position: relative;
   top: -6px;
   margin-left: 6px;
+  z-index: 1;
 }
 
 .navigation {
@@ -205,6 +206,9 @@ span.btn {
   text-align: left;
   padding: 4px 2px;
   cursor: pointer;
+  background: #fff;
+  z-index: 100;
+  position: relative;
 }
 
 .autocomplete-result.is-active,
@@ -237,6 +241,7 @@ span.btn {
     display: block;
   }
 }
+
 @media screen and (max-width: 340px) {
   .navigation .location {
     width: 115px;
