@@ -1,3 +1,3 @@
 # gabi0605.github.io
-Мой первый опубликованный сайт
+Портфолио
 [Например](https://gabi0605.github.io/SmartAgency/)
