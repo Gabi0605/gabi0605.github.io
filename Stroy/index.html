@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stroyportal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <div class="container">
+                <div class="location">
+                    <a href="#"><img src="img/location.svg" alt="Местоположение"></a>
+                    <p><a href="#">Волгоградская область</a></p>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Тендеры</a></li>
+                        <li><a href="#">Базы подрядчиков</a></li>
+                        <li class="choice"><a href="#">Другие сервисы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="container">
+                <div class="logo"><img src="img/logo.svg" alt="Stroyportal"></div>
+                <div class="catalog">
+                    <button>
+                        <img src="img/menu.svg" alt="Каталог">
+                        <span class="btn">Каталог</span>
+                    </button>
+                </div>
+                
+                <div id="app" class="search">
+                    <autocomplete :items="[ 'Стройматериалы', 'Инструменты', 'Декор', 'Напольные покрытия', 'Плитка', 'Электротовары', 'Сантехника', 'Краски', 'Кухня']" />
+                  
+                </div>
+
+                
+
+                <div class="list">
+                    <button>
+                        <img src="img/list.svg" alt="Список">
+                        <span class="btn">Список</span>
+                    </button>
+                </div>
+                <div class="user"><button>А</button></div>
+            </div>
+        </div>
+    </header>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/x-template" id="autocomplete">
+        <div class="autocomplete">            
+            <input type="text" @input="onChange" v-model="search" @keyup.down="onArrowDown" @keyup.up="onArrowUp" @keyup.enter="onEnter" placeholder="Хочу найти...">
+            
+            <ul id="autocomplete-results" v-show="isOpen" class="autocomplete-results">
+                <li class="loading" v-if="isLoading">
+                Loading results...
+                </li>
+                <li v-else v-for="(result, i) in results" :key="i" @click="setResult(result)" class="autocomplete-result" :class="{ 'is-active': i === arrowCounter }">
+                {{ result }}
+                </li>
+            </ul>
+      
+        </div>
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
