@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans";
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1100px;
+  width: 80%;
+  margin: auto;
+  height: 100%;
+}
+
+button {
+  width: 116px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 600;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+span.btn {
+  position: relative;
+  top: -6px;
+  margin-left: 6px;
+}
+
+.navigation {
+  height: 32px;
+  background: #FAFBFC;
+  font-size: 12px;
+  line-height: 20px;
+  color: #708598;
+}
+
+.navigation .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation .location img {
+  margin-right: 8px;
+  position: relative;
+  top: 2px;
+}
+
+.navigation .menu ul li {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.navigation .menu ul li.choice {
+  position: relative;
+}
+
+.navigation .menu ul li.choice::after {
+  content: "";
+  position: absolute;
+  background: url(../img/down.svg);
+  width: 20px;
+  height: 15px;
+  right: -20px;
+  top: 2px;
+}
+
+.header-content {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 14px 0;
+}
+
+.header-content .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-content .logo {
+  margin-right: 24px;
+}
+
+.header-content .catalog {
+  margin-right: 24px;
+}
+
+.header-content .catalog button {
+  background: #FED83D;
+}
+
+.header-content .search {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 24px;
+  position: relative;
+}
+
+.header-content .search::after {
+  content: "";
+  background: url(../img/search.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.header-content .search input {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #ECEFF1;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 8px 14px;
+  color: #708598;
+}
+
+.header-content .search input::-webkit-input-placeholder {
+  color: #708598;
+}
+
+.header-content .search input:-ms-input-placeholder {
+  color: #708598;
+}
+
+.header-content .search input::-ms-input-placeholder {
+  color: #708598;
+}
+
+.header-content .search input::placeholder {
+  color: #708598;
+}
+
+.header-content .search input:focus {
+  outline: none;
+}
+
+.header-content .list {
+  margin-right: 24px;
+  background: #FAFBFC;
+}
+
+.header-content .list button {
+  padding-top: 6px;
+}
+
+.header-content .user button {
+  width: 40px;
+  height: 40px;
+  background: #9B51E0;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.autocomplete {
+  position: relative;
+}
+
+.autocomplete-results {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #eeeeee;
+  height: 120px;
+  overflow: auto;
+  width: 100%;
+  position: absolute;
+}
+
+.autocomplete-result {
+  list-style: none;
+  text-align: left;
+  padding: 4px 2px;
+  cursor: pointer;
+}
+
+.autocomplete-result.is-active,
+.autocomplete-result:hover {
+  background-color: #708598;
+  color: white;
+}
+
+@media screen and (max-width: 950px) {
+  .header-content .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .header-content div {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navigation {
+    height: auto;
+  }
+  .navigation .menu {
+    margin: 5px 0;
+  }
+  .navigation .menu ul li {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
